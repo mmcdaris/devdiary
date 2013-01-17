@@ -1,0 +1,32 @@
+<title>DevDiary</title>
+
+<div class="top">
+  <span class="header"> DevDiary</span>
+  <span class="new"><%= link_to 'New Entry', new_entry_path %></span>
+</div>
+
+<div class="content">
+    <div class="headers">
+      <div class="hsub">Subject</div>
+      <div class="htitle">Title</div>
+      <div class="hbody">Body</div>
+      <div class="hdate">Date</div>
+      <div class="hactions">Actions</div>
+    </div>
+  <% @entries.each do |entry| %>
+    <div class="rows">
+      <div class="sub"><%= entry.subject %></div>
+      <div class="title"><%= entry.title %></div>
+      <div class="body"><%= truncate(entry.body, length: 50) %></div>
+      <div class="date"><%= entry.created_at %></div>
+      <div class="actions">
+      <%= link_to 'Show', entry %> 
+      <%= link_to 'Edit', edit_entry_path(entry) %> 
+      <%= link_to 'Destroy', 
+                   entry, methood: :delete, 
+                   data: { confirm: 'Are you sure?' } 
+                   %>
+      </div>
+   </div>
+  <% end %>
+</div>
