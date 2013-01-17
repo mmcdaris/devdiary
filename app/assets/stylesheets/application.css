@@ -15,7 +15,12 @@ div.top {
 }
 
 
-
+div.footer {
+  border:5px solid black;
+  background-color:#777;
+  height:3em;
+  width:100%;
+}
 
 
 /*
@@ -30,8 +35,7 @@ div.top {
  *
  *= require_self
  *= require_tree .
+ *= include entries.css.scss
 
- */
+*/
 
-= require_self
-= require_tree .

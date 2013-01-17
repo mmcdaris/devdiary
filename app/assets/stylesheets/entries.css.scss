@@ -24,12 +24,9 @@ div.top span.new {
 }
 
 div.content { margin-left:5%; }
-div.content, div.headers, div.rows {
-  width:100%;
-}
-
-div.headers {
-  font-weight:bold;
+div.content,div.headers,div.rows {
+  width:1350px;
+  resize:none;
 }
 
 div.rows {
@@ -40,30 +37,32 @@ div.rows {
   padding:.25em, 0em, 0em, 1em;
 }
 
-div.hsub, div.sub {
+.headers {
+  font-weight:bold;
+  color:red;
+}
+
+div.hsub,div.sub {
   float:left;
   width:10%;
 }
 
-div.htitle, div.title {
+div.htitle,div.title {
   float:left;
   width:10%;
 }
 
-div.hbody, div.body {
+div.hbody,div.body {
   float:left;
   width:33%;
 }
 
-div.hdate, div.date {
+div.hdate,div.date {
   float:left;
   width:15%;
 }
 
-div.hactions, div.actions {
+div.hactions,div.actions {
   float:left;
   width:30%;
 }
-
-
-

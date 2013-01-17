@@ -22,11 +22,10 @@
       <div class="actions">
       <%= link_to 'Show', entry %> 
       <%= link_to 'Edit', edit_entry_path(entry) %> 
-      <%= link_to 'Destroy', 
-                   entry, methood: :delete, 
-                   data: { confirm: 'Are you sure?' } 
-                   %>
+      <%= link_to 'Destroy', entry, method: :delete %> 
       </div>
-   </div>
+    </div>
   <% end %>
 </div>
+
+<div class="footer">yo!</div>
