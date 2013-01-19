@@ -16,8 +16,7 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :subject %><br />
-    <%= f.text_field :subject %>
+    <%= f.select :subject, [ ['AB','AB'], ['EX','EX'], ['RTG','RTG'], ['ALL', 'ALL'] ] %><br />
   </div>
   <div class="field">
     <%= f.label :body %><br />
