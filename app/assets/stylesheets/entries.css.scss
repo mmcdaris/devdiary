@@ -4,7 +4,7 @@
 
 // animation section
 .header {
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: .0001s;
   -webkit-animation-name: pulse;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -12,11 +12,11 @@
  
 @-webkit-keyframes pulse {
   from {
-    text-shadow: 0px 0px 5px #bbb;
+    text-shadow: 1000px 0 20px #000;
   }
  
   to {
-    text-shadow: 0px 0px 0px #bbb;
+    text-shadow: -200px 0 20px #AA0;
   }
 }
 
@@ -25,10 +25,14 @@
 
 // end of animation section
 
-
+.top img { 
+  margin-left:3em; 
+  width:2em;
+  margin-right:0em;
+  margin-bottom:-.05em;
+}
 
 div.top span.header {
-  padding-left:5%;
   color:#AA0;
   font-size:2em;
   font-weight:bold;
