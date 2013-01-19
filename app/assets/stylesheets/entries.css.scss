@@ -5,22 +5,34 @@
 // animation section
 .header {
   -webkit-animation-duration: .0001s;
-  -webkit-animation-name: pulse;
+  -webkit-animation-name: driveby;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
 }
  
-@-webkit-keyframes pulse {
+@-webkit-keyframes driveby {
   from {
     text-shadow: 1000px 0 20px #000;
   }
  
   to {
-    text-shadow: -200px 0 20px #AA0;
+    text-shadow: -250px 0 20px #AA0;
   }
 }
 
-.header:hover {-webkit-animation-play-state: paused;}
+@-webkit-keyframes sway {
+  0% { text-shadow: 1000px 0 20px #000; }
+  70% { text-shadow: -250px 0 10px #AA0; }
+  100% { text-shadow: 0px 0 0px #AA0; }
+
+}
+
+.header:hover {
+  //-webkit-animation-play-state: paused;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: sway;
+  -webkit-animation-iteration-count: 1;
+}
 
 
 // end of animation section
